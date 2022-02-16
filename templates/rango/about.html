@@ -1,0 +1,16 @@
+{% extends 'rango/base.html' %}
+{% load static %}
+
+{% block title_block %}
+    About
+{% endblock %}
+
+
+{% block body_block %}
+    <h1>This was put together by Greg.</h1>
+    <h2>You have visited this site {{ visits }} times.</h2>
+    <img src="{{ MEDIA_URL }}cat.jpg" alt="Picture of a cat"/>
+    <button class="btn btn-primary" id="about-btn">
+        Click me - I'm javascript on Ice
+    </button>
+{% endblock %}
